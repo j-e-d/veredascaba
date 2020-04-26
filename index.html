@@ -218,21 +218,16 @@
       }
     }
 
-		// map.addSource('sidewalks', {
-		//    type: 'geojson',
-		//    data: './sidewalkwidths_nyc.geojson'
-		// });
-
-		map.addSource('sidewalks', {
-			 type: 'vector',
-			 url: 'mapbox://unahormiga.b5vsl1r8'
-		});
+    map.addSource('sidewalks', {
+      type: 'vector',
+      url: 'mapbox://unahormiga.b5vsl1r8'
+    });
 
     map.addLayer({
       'id': 'sidewalks',
       'type': 'line',
       'source': 'sidewalks',
-			'source-layer': 'sidewalkwidths_nyc-87ugfr',
+      'source-layer': 'veredas-2019-dih4pl',
       'layout': {
         'line-cap': 'round',
       },
@@ -355,18 +350,18 @@
       popup._content.style.color = lineColor
       popup._content.style.borderColor = lineColor
 
-			if (popup._tip.offsetParent.className.includes('mapboxgl-popup-anchor-bottom')) {
-				popup._tip.style.borderTopColor = lineColor
-			}
-			if (popup._tip.offsetParent.className.includes('mapboxgl-popup-anchor-top')) {
-	      popup._tip.style.borderBottomColor = lineColor
-			}
-			if (popup._tip.offsetParent.className.includes('mapboxgl-popup-anchor-right')) {
-				popup._tip.style.borderLeftColor = lineColor
-			}
-			if (popup._tip.offsetParent.className.includes('mapboxgl-popup-anchor-left')) {
-				popup._tip.style.borderRightColor = lineColor
-			}
+      if (popup._tip.offsetParent.className.includes('mapboxgl-popup-anchor-bottom')) {
+        popup._tip.style.borderTopColor = lineColor
+      }
+      if (popup._tip.offsetParent.className.includes('mapboxgl-popup-anchor-top')) {
+        popup._tip.style.borderBottomColor = lineColor
+      }
+      if (popup._tip.offsetParent.className.includes('mapboxgl-popup-anchor-right')) {
+        popup._tip.style.borderLeftColor = lineColor
+      }
+      if (popup._tip.offsetParent.className.includes('mapboxgl-popup-anchor-left')) {
+        popup._tip.style.borderRightColor = lineColor
+      }
 
       popup.addTo(map)
     }

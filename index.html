@@ -196,7 +196,7 @@
     center: [-58.44, -34.6],
     zoom: 13,
     maxZoom: 19,
-    minZoom: 14,
+    minZoom: 15,
     maxBounds: [
      [-58.57, -34.73], // Southwest coordinates
      [-58.3, -34.53] // Northeast coordinates
@@ -220,14 +220,14 @@
 
     map.addSource('sidewalks', {
       type: 'vector',
-      url: 'mapbox://unahormiga.b5vsl1r8'
+      url: 'mapbox://unahormiga.cej804w0',
     });
 
     map.addLayer({
       'id': 'sidewalks',
       'type': 'line',
       'source': 'sidewalks',
-      'source-layer': 'veredas-2019-dih4pl',
+      'source-layer': 'veredascaba-8v9n1z',
       'layout': {
         'line-cap': 'round',
       },

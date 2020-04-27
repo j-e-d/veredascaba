@@ -196,7 +196,7 @@
     center: [-58.44, -34.6],
     zoom: 13,
     maxZoom: 19,
-    minZoom: 15,
+    minZoom: 13,
     maxBounds: [
      [-58.57, -34.73], // Southwest coordinates
      [-58.3, -34.53] // Northeast coordinates
@@ -251,42 +251,6 @@
         ],
         'line-opacity': 1,
       },
-    },
-    labelLayerId
-    );
-
-    map.addLayer(
-      {
-        'id': '3d-buildings',
-        'source': 'composite',
-        'source-layer': 'building',
-        'filter': ['==', 'extrude', 'true'],
-        'type': 'fill-extrusion',
-        'minzoom': 15,
-        'paint': {
-        'fill-extrusion-color': '#141c26',
-        'fill-extrusion-height': [
-          'interpolate',
-          ['linear'],
-          ['zoom'],
-          15, 0,
-          15.05, ['get', 'height']
-        ],
-        'fill-extrusion-base': [
-          'interpolate',
-          ['linear'],
-          ['zoom'],
-          15, 0,
-          15.05, ['get', 'min_height']
-        ],
-        'fill-extrusion-opacity': [
-          'interpolate',
-          ['linear'],
-          ['zoom'],
-          15, 0,
-          16, 0.95
-        ]
-      }
     },
     labelLayerId
     );

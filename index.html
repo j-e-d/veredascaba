@@ -242,15 +242,16 @@
         'line-color': [
           'interpolate',
           ['linear'],
-          ['get', 'width'],
+          ['get', 'ANCHOEQUIV'],
           0, '#d7191c',
-          6, '#d7191c',
-          12, '#bab849',
-          18, '#03fc7b',
-          24, '#03a1fc'
+          1.82, '#d7191c',
+          3.66, '#bab849',
+          5.49, '#03fc7b',
+          6.71, '#03a1fc'
         ],
         'line-opacity': 1,
         'line-translate': [-73, -73],
+        'line-translate-anchor': 'viewport',
       },
     },
     labelLayerId
@@ -335,7 +336,7 @@
         var message = easy
         var lineColor = '#03fcda'
       } else {
-        var message = grat
+        var message = great
         var lineColor = '#03a1fc'
       }
 

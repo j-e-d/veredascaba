@@ -193,9 +193,9 @@
     container: 'map',
     style: 'mapbox://styles/unahormiga/ck9hi42614vdk1ilekg923ytt',
     center: [-58.44, -34.6],
-    zoom: 15,
+    zoom: 14,
     maxZoom: 19,
-    minZoom: 15,
+    minZoom: 14,
     maxBounds: [
      [-58.57, -34.73], // Southwest coordinates
      [-58.3, -34.53] // Northeast coordinates
@@ -219,14 +219,14 @@
 
     map.addSource('sidewalks', {
       type: 'vector',
-      url: 'mapbox://unahormiga.cej804w0',
+      url: 'mapbox://unahormiga.26ztdo3j',
     });
 
     map.addLayer({
       'id': 'sidewalks',
       'type': 'line',
       'source': 'sidewalks',
-      'source-layer': 'veredascaba-8v9n1z',
+      'source-layer': 'veredascaba_single-10-4k29a4',
       'layout': {
         'line-cap': 'round',
       },
